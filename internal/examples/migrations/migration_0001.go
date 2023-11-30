@@ -6,7 +6,7 @@ import (
 
 var Migration0001 = gomigrator.Migration{
 	MigrationName:         "migration_0001",
-	PreviousMigrationName: "migration_0000",
+	PreviousMigrationName: "genesis",
 	SQL: []gomigrator.SQLOP{
 		{
 			Apply: `

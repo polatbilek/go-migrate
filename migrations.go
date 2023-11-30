@@ -193,8 +193,8 @@ func validateLocalMigrationOrderWithDbMigrationOrder(dbMigrations []string, migr
 
 func init() {
 	genesis = Migration{
-		MigrationName:         "migration_0000",
-		PreviousMigrationName: "GENESIS",
+		MigrationName:         "genesis",
+		PreviousMigrationName: "",
 		SQL: []SQLOP{
 			{
 				Apply: `
