@@ -23,7 +23,7 @@ func main() {
 		Dialector:                nil,
 	}
 
-	dsn := "api_user:9f81c7772b9d1e6b0b1074a0cff8b431@tcp(localhost:3306)/facebookapp?charset=utf8mb4&parseTime=True&loc=UTC"
+	dsn := "YOUR_DSN_HERE"
 	db, err := gorm.Open(mysql.Open(dsn), &dbConf)
 
 	if err != nil {
@@ -31,5 +31,4 @@ func main() {
 	}
 
 	gomigrator.Migrate("", db)
-	time.Sleep(1000000)
 }
