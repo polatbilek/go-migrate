@@ -1,6 +1,6 @@
 package migrations
 
-import "go-migrate/migrator"
+import "github.com/polatbilek/gomigrator/migrator"
 
 var Migration0002 = migrator.Migration{
 	MigrationName:         "migration_0002",

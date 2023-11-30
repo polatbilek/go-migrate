@@ -1,8 +1,8 @@
 package main
 
 import (
-	_ "go-migrate/internal/examples/migrations"
-	"go-migrate/migrator"
+	_ "github.com/polatbilek/gomigrator/internal/examples/migrations"
+	"github.com/polatbilek/gomigrator/migrator"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"time"

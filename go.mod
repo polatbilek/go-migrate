@@ -1,4 +1,4 @@
-module go-migrate
+module github.com/polatbilek/gomigrator
 
 go 1.21.0
 
