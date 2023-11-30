@@ -1,8 +1,8 @@
 package main
 
 import (
+	"github.com/polatbilek/gomigrator"
 	_ "github.com/polatbilek/gomigrator/internal/examples/migrations"
-	"github.com/polatbilek/gomigrator/migrator"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"time"
@@ -30,6 +30,6 @@ func main() {
 		panic("Error while connecting database. Reason: " + err.Error())
 	}
 
-	migrator.Migrate("", db)
+	gomigrator.Migrate("", db)
 	time.Sleep(1000000)
 }

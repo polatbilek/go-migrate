@@ -1,4 +1,4 @@
-package migrator
+package gomigrator
 
 import (
 	"fmt"

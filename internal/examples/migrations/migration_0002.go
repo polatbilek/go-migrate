@@ -1,11 +1,13 @@
 package migrations
 
-import "github.com/polatbilek/gomigrator/migrator"
+import (
+	"github.com/polatbilek/gomigrator"
+)
 
-var Migration0002 = migrator.Migration{
+var Migration0002 = gomigrator.Migration{
 	MigrationName:         "migration_0002",
 	PreviousMigrationName: "migration_0001",
-	SQL: []migrator.SQLOP{
+	SQL: []gomigrator.SQLOP{
 		{
 			Apply: `
 					CREATE TABLE auth_tokens (
@@ -20,5 +22,5 @@ var Migration0002 = migrator.Migration{
 	}}
 
 func init() {
-	migrator.AddMigrationOps(Migration0002)
+	gomigrator.AddMigrationOps(Migration0002)
 }

@@ -1,13 +1,13 @@
 package migrations
 
 import (
-	"github.com/polatbilek/gomigrator/migrator"
+	"github.com/polatbilek/gomigrator"
 )
 
-var Migration0001 = migrator.Migration{
+var Migration0001 = gomigrator.Migration{
 	MigrationName:         "migration_0001",
 	PreviousMigrationName: "migration_0000",
-	SQL: []migrator.SQLOP{
+	SQL: []gomigrator.SQLOP{
 		{
 			Apply: `
 					CREATE TABLE users (
@@ -31,5 +31,5 @@ var Migration0001 = migrator.Migration{
 	}}
 
 func init() {
-	migrator.AddMigrationOps(Migration0001)
+	gomigrator.AddMigrationOps(Migration0001)
 }
