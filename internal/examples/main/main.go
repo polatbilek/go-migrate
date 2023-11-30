@@ -23,7 +23,7 @@ func main() {
 		Dialector:                nil,
 	}
 
-	dsn := "YOUR_DSN_HERE"
+	dsn := "WRITE_YOUR_DSN_HERE"
 	db, err := gorm.Open(mysql.Open(dsn), &dbConf)
 
 	if err != nil {
